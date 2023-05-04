@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<title> Reservation Page </title>
+<link rel = "stylesheet" type = "text/css" href = "Styling.css">
+<script src  = "Functions.js"></script>
+</head>
+<body>
+
+    
+
+<div> <!-- The Navigation Bar and Its Content-->
+<nav>
+<ul id = "NAV_List">
+<li id = "NAV_TITLE"> <P > MGS Hotel</P> </li>
+<li id = "INFO"> <p  > This Site is for Academic Purpose Only </p> </li>
+</ul>
+</nav>
+</div>
+
+<Div class = "The_Body_Content" >
+
+
+  <div class = "Body_Left_Side" >       <!-- Begin Body_Left_Side--> 
+                                                                                     
+     <P class = "Body_Left_Side_Information" > Welcome to MGS HOTEL!!! </P>                                                                                                     <!-- 1 -->
+     <P class = "Body_Left_Side_Information"> In this Page you can Reserve a room in our famous Hotel </P>     
+     <P class = "Body_Left_Side_Information"> Here you can enjoy:</P>                                        
+     <ul class = "Body_Left_Side_Information">                                                                 
+        <li class = "Body_Left_Side_Information"> <P> The Best Rooms </P>  </li>                          
+        <li class = "Body_Left_Side_Information" > <P> The Best landscapes </P>  </li>                      
+        <li class = "Body_Left_Side_Information"> <P> Luxury Services  </P>  </li>   
+        <li class = "Body_Left_Side_Information"> <P> Low Costs  </P>  </li>
+      </ul>                                                                                          
+     <p style="padding-top:30px; padding-left: 30px; font-size: 30px; font-family: Arial, Helvetica, sans-serif;font-weight: bold; color: blue" >
+       Reserve Your Room Now!!!</p>       
+
+  </div>                             <!-- End Body_Left_Side-->                                                            
+
+
+  <div class = "Body_Right_Side">        <!-- Begin Body Right-->                                                                                 
+                                                                                                                      
+    <form class = "form"  action="" ; method="post" name = "Form">
+
+    <!-- The Form Title -->  
+
+      <div>
+  
+      <P id = "form_title">  MGS Hotel </P>
+      <P id = "form_info"> Fill in the Form to reserve Your Room </P>          
+       
+      </div>
+
+    <!-- part 1 : The First Name and The Last Name -->       
+                                                             
+       <div class = "labels" >     
+                                                                                                              
+         <!-- The First Name Textbox-->   
+
+         <label for="Firstname" class = "labels_text">First name:</label>
+         <input type="text" name="Firstname" id="Firstname" size="15" maxlength="15" placeholder="Michael" required>
+
+        <!-- The Last Name Textbox--> 
+
+        <label for="Lastname" class = "labels_text">Last Name:</label>
+        <input type="text" name="LastName" id="Lastname" size="15" maxlength="15" placeholder="George" required>
+
+        </div>
+
+    <!-- part 2 : The Number of Nights -->
+
+       <div  class = "labels">
+           
+          <label for="Nights" class = "labels_text">Nights:</label>
+           <input type = "Number" name="Nights" id="Nights" size="10" placeholder="5" required>
+
+       </div>
+
+
+  
+    <!-- part 3 : The Room Type -->
+
+        <div class = "labels">
+
+          <label for="Room_Type" class = "labels_text">Room Type:</label>
+
+          <select name ="Room-Type" id="Room_Type" required >
+            <option value= "" selected disabled >None</option>
+            <option value="1">Single</option>
+            <option value="2">Double</option>
+            <option value="3">Family Room</option>
+            <option value="4">Suite</option>
+          </select>
+
+        </div>
+
+
+    <!-- part 4 : The Room View -->
+ 
+
+
+      <!-- The View Label -->
+
+        <div class = "labels">
+
+      
+          <LABEL class = "labels_text"> View: </LABEL>
+
+
+        </div>
+
+      <!-- The Options Below the View Label -->
+
+        <div class = "labels" >
+
+          <!-- Sea View Label and Option-->
+
+          <label for = "sea view" class = "labels_text">Sea View</label>
+          <input type="radio" name="View" id = "sea view" value = 1 required >
+
+          <!-- Side View Label and Option-->
+
+          <label for = "side view" class = "labels_text" >Side View</label>
+          <input type="radio" name="View" id = "side view" value = 2>
+
+          <!-- Background View Label and Option-->
+
+          <label for = "background view" class = "labels_text" >Background View</label>
+          <input type="radio" name="View" id = "background view" value = 3>
+
+        </div>
+
+    <!-- part 5 : The Room Luxury Services    -->
+
+      <!-- The Luxury Services Label -->
+
+       <div class = "labels">
+
+       <label class ="labels_text"> Luxury Services:  (Optional) </label>
+
+       </div>
+
+      <!-- The Options Below the Background Label -->
+
+       <div class="labels">
+
+      <!-- Netflix Label and Option-->
+
+        <label for = "Netflix" class = "labels_text">Netflix</label>
+        <input type="checkbox" name="Luxury" id = "Netflix" value="1"  >
+
+      <!-- Bein Sports Label and Option-->
+  
+        <label for = "BeinSports" class = "labels_text">Bein Sports</label>
+        <input type="checkbox" name="Luxury" id = "BeinSports" value="2">
+
+      <!-- HBO MAX Label and Option-->
+
+       <label for = "HBO MAX" class = "labels_text">HBO MAX</label>
+       <input type="checkbox" name="Luxury" id = "HBO MAX" value="3">
+ 
+       </div>
+
+
+    <!-- part 6 : The Reset and Submit Button and the Messages  on click -->
+
+
+     <!-- The paragraph that will include the Message -->
+
+       <div class = "labels" >
+
+         <p id = "Message"></p>
+
+       </div>
+    
+     <!-- The Buttons --> 
+
+      <div class = "labels"  >
+
+       <button onclick ="f()" type="submit"> Submit </button>
+       <button onclick= "D()"  type="reset" > Reset </button>
+     
+      </div>
+
+</form>
+
+</div>                            <!-- End Body Right_Side-->
+        
+</div>  <!-- End The_Body_Content-->
+
+</body>
+
+
+</html>

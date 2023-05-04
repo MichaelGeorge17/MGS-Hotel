@@ -1,0 +1,142 @@
+*
+{
+    padding: 0;
+    margin :0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav
+{
+    background-color: grey;
+    height: 40;
+
+}
+
+/* to display the content of the ul next to each other  instead of beneath each other*/
+
+ul#NAV_List li
+{
+    display: inline-block;
+}
+
+li#NAV_TITLE  /* The "MGS Hotel Label in Nav Bar */
+{
+    color : blue;
+    font-size: 50px;
+    font-style: italic;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+li#INFO /* The "This Site is for Academic Purpose Only" Label in Nav Bar*/
+{
+    float: right; /* to make it displayed on the right side instead of being on the left side next to the first li */
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 20px;
+    padding-right: 30px; /* the first li is on the left side so we used padding-left,the second li is on the right so we used padding-right*/
+}
+
+
+body
+{
+    background-image: url("Hotel Room.png");
+    background-repeat: no-repeat;
+}
+
+ /* we will split the body into two part left side and right side and make them displayed next to eact instead of below each other */
+
+ div.Body_Left_Side
+
+ { 
+    margin-top: 30px;
+    float: left;  /*  to display its content on the left side*/
+    width: 50%; /* giving it 50% of the body width so that body_ right take the other 50%*/
+  
+ }
+
+ div.Body_Right_Side
+ {
+    margin-top: 30px;
+    float: right;/* to display its content on the right side*/
+    width: 50%;/* body_right will take the other 50% of the body width */ 
+    padding-left: 125px;
+ }
+
+.Body_Left_Side_Information  /* The Information in Body_Left_Side Div */
+{
+/* Addusting how the paragraphs in the "body_Left_Side_" Div will be displayed */
+
+padding-top: 10px; 
+padding-left: 30px;   
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: blue 
+
+/* apply to all <P> in the left body except "Reserve Your Room Now!!!" because in this <P> we used padding-top ; 30px> */
+} 
+
+.Body_Right_Side form  /*THE Form in Body_Right_Side Div */ 
+ {
+   background-color: bisque;
+   padding-left: 30px;
+   height: 520px;
+   width: 80%;
+   border : 20px solid transparent;
+   border-image:url("Business-Page-Border.png") 30 stretch ;
+ }
+  #form_title   /* The MGS IN the Form */
+ {
+    color : blue;
+    font-style: italic;
+    margin-top: 10px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+ }
+
+ #form_info  /* The ( Fill in the Form to reserve Your Room) Text in The Form */
+ {
+    color : blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 40px;
+
+ }
+
+.labels /*to Leave an empty space between this division and the previous one will appear more if we use the background color property*/
+{
+  margin-top: 25px;
+
+}
+
+.labels_text   /* Any Text in the Form */
+{    
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+button /* The Buttons */
+{
+    width: 20%;
+    border-radius: 10px ;
+    background-color: orange;
+    color: white;
+    float: right;
+    margin-right: 10px; 
+}
+
+button:hover  /*When we move the pointer on any Button */
+{
+    background-color: white;
+    color: black;
+}
+
+
+ 
+
+
